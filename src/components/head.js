@@ -11,11 +11,15 @@ const Head = () => {
 
    <meta charSet="utf-8" />
    <base href="/" />
-   <title>Cleche</title>
+   <title>Cliche</title>
    <meta name="Description" content="Изготовление клише спб" />
-   <meta property="og:title" content="HELL, FOODY!" />
+   <meta property="og:title" content="Cliche" />
    <meta property="og:description" content="Изготовление клише" />
    <meta property="og:image" content="https://something.io/cover.jpeg" />
+   <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+    rel="stylesheet"
+   />
    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"

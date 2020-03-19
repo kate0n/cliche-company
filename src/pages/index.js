@@ -21,7 +21,7 @@ const IndexPage = () => (
     <h1 className="hidden">Изготовление клише</h1>{" "}
     <div className="main_bg">
      <ScrollAnimation animateIn="fadeIn" duration={2}>
-      <h2 className="title_h2">Cleche</h2>{" "}
+      <h2 className="title_h2">Cliche</h2>{" "}
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn" duration={2}>
       <h3 className="title_h3 text">
