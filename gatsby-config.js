@@ -1,11 +1,11 @@
 module.exports = {
+ pathPrefix: `/cliche-company`,
  siteMetadata: {
   title: `Gatsby Default Starter`,
   description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
   author: `@gatsbyjs`,
  },
  plugins: [
-  (pathPrefix: "/cliche-company"),
   `gatsby-plugin-react-helmet`,
   {
    resolve: `gatsby-source-filesystem`,
