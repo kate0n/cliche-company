@@ -1,5 +1,6 @@
 import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
+import Scrollchor from "react-scrollchor"
 // import SEO from "../components/seo"
 import "../styles/main.scss"
 import Head from "../components/head"
@@ -9,7 +10,7 @@ import ClecheTypes from "../components/clecheTypes"
 import Feature from "../components/features"
 import Contacts from "../components/contacts"
 import Footer from "../components/footer"
-
+import arrowDown from "../images/down-btn.png"
 const IndexPage = () => (
  <>
   <Head />
@@ -38,6 +39,9 @@ const IndexPage = () => (
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn" duration={2}>
       <button className="button">СВЯЗАТЬСЯ</button>
+      <Scrollchor to="#services">
+       <img src={arrowDown} className="main__arrow-down" />
+      </Scrollchor>
      </ScrollAnimation>
     </div>
    </div>

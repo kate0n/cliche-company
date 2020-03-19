@@ -181,7 +181,7 @@ html {
 }
 
 .main {
- // height: 100vh;
+ height: 100vh;
  color: #fff;
  background: url("../images//bg_main2.png");
  background-position: 50% 50%;
@@ -204,6 +204,16 @@ html {
  .text {
   max-width: 844px;
  }
+
+ &__arrow-down {
+  position: absolute;
+  top: 100%;
+  transform: translate(50%, -50%);
+  right: 50%;
+ }
+ @media (max-width: 992px) {
+  height: 100%;
+ }
 }
 
 .main_bg {
@@ -217,12 +227,12 @@ html {
  padding: 48px;
  position: relative;
  margin-bottom: 32px;
- &::after {
-  content: url("../images/down-btn.png");
-  position: absolute;
-  top: 100%;
-  transform: translate(0, -50%);
- }
+ //  &::after {
+ //   content: url("../images/down-btn.png");
+ //   position: absolute;
+ //   top: 100%;
+ //   transform: translate(0, -50%);
+ //  }
 
  @media (max-width: 568px) {
   width: 100%;

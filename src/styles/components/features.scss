@@ -3,6 +3,10 @@
  flex-direction: column;
  align-items: center;
 
+ li {
+  margin-bottom: 24px;
+ }
+
  &__desc {
   max-width: 830px;
   text-align: center;

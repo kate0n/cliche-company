@@ -28,7 +28,7 @@ const services = [
 
 export const Services = () => (
  <Container>
-  <div className="services">
+  <div className="services" id="services">
    <ScrollAnimation animateIn="fadeIn" duration={2}>
     <h3 className="title_h3">НАШИ УСЛУГИ</h3>{" "}
    </ScrollAnimation>
