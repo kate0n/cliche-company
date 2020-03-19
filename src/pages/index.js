@@ -38,7 +38,11 @@ const IndexPage = () => (
       </p>
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn" duration={2}>
-      <button className="button">СВЯЗАТЬСЯ</button>
+      <button className="button">
+       {" "}
+       <Scrollchor to="#contacts">СВЯЗАТЬСЯ </Scrollchor>
+      </button>
+
       <Scrollchor to="#services">
        <img src={arrowDown} className="main__arrow-down" />
       </Scrollchor>

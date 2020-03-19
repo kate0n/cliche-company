@@ -69,7 +69,7 @@ export const Contacts = () => {
    <ScrollAnimation animateIn="fadeIn" duration={2}>
     <h3 className="title_h3">СВЯАТЬСЯ С НАМИ</h3>{" "}
    </ScrollAnimation>
-   <div className="contacts">
+   <div className="contacts" id="contacts">
     {/* left block */}
 
     <div className="contacts__info">

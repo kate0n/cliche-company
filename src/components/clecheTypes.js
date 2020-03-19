@@ -6,32 +6,32 @@ const clecheTypes = [
  {
   title: "Горчее теснение фольгой",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   "переносит фольгу на бумагу, картон, пластик, кожу. Возможно заказать дополнительное зеркалирование тиснящих элементов для придания оттиску зеркального глянца",
  },
  {
   title: "Конгрев",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   "выполняется подъем изображения (выпуклость). В комплект необходимо заказать одно из: пластиковую матрицу, фирменную магниевую патрицу (увеличение прочности и тиражестойкости), матричные картоны",
  },
  {
   title: "Теснение фольшгой конгревом",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   " сокращение сроков тиража применяется технология тиснения фольгой с конгревом в один удар. Это удорожает клише, но сокращает время тиража вдвое. Обязательно наличие хорошего пресса и применение компрессионных пленок",
  },
  {
   title: "Припрессировка голограмм",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   "голограммы бывают на самоклейке и в виде фольги для тиснения. Важно точное позиционирование оттиска. Чаще используется латунное клише",
  },
  {
   title: "Текстурирование",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   "чаще всего для текстурных материалов (основное изображение делается гладким относительно текстурного фона",
  },
  {
   title: "Блинт",
   desc:
-   "Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm Loreum Iplusm",
+   "из клеше формируется текстурное изображение (фактуры ткани/кожи) и переносится на бумагу или картон",
  },
 ]
 

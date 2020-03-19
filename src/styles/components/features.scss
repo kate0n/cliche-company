@@ -14,9 +14,10 @@
 
  &__list {
   &__img-wrapper {
-   height: 300px;
+   height: 470px;
    position: relative;
    overflow: hidden;
+   border-radius: $border-radius;
   }
 
   &__img-overlay {
