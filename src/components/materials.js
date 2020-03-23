@@ -11,6 +11,12 @@ export const Materials = () => {
   setActiveTab(tabIndex)
  }
 
+ const handleKeyDown = ev => {
+  if (ev.keyCode === 13) {
+   this.focus()
+  }
+ }
+
  return (
   <Container>
    <div className="materials">
@@ -25,6 +31,9 @@ export const Materials = () => {
          materials__tabs__item_active: activeTab === i,
         })}
         onClick={() => handleTabChange(i)}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        role="button"
        >
         {tab}
        </li>

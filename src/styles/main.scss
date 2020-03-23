@@ -228,6 +228,10 @@ html {
  margin-bottom: 24px;
 }
 
+[role="button"]:focus {
+ font-weight: 400;
+}
+
 @import "./components/services.scss";
 @import "./components/materials.scss";
 @import "./components/cleche-types.scss";

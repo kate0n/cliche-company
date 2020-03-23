@@ -22,12 +22,7 @@ export const Features = () => (
        ))}
       </ul>
      </div>
-     <img
-      src={bg}
-      alt="background"
-      className="features__list__img"
-      alt="background"
-     />
+     <img src={bg} className="features__list__img" alt="background" />
     </div>
    </ScrollAnimation>
   </div>

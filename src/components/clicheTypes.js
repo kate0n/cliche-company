@@ -12,6 +12,12 @@ export const ClicheTypes = () => {
   index === isOpen ? setIsOpen(null) : setIsOpen(index)
  }
 
+ const handleKeyDown = ev => {
+  if (ev.keyCode === 13) {
+   this.focus()
+  }
+ }
+
  return (
   <Container>
    <div className="cleche-types">
@@ -26,6 +32,7 @@ export const ClicheTypes = () => {
        index={index}
        isOpen={isOpen}
        handleAccordion={handleAccordion}
+       handleKeyDown={handleKeyDown}
       />
      ))}
     </div>
@@ -34,11 +41,21 @@ export const ClicheTypes = () => {
  )
 }
 
-const QuestionItem = ({ title, desc, isOpen, handleAccordion, index }) => (
+const QuestionItem = ({
+ title,
+ desc,
+ isOpen,
+ handleAccordion,
+ handleKeyDown,
+ index,
+}) => (
  <ScrollAnimation animateIn="fadeIn" duration={2}>
   <div
    className="cleche-types__accordion__item"
    onClick={() => handleAccordion(index)}
+   onKeyDown={handleKeyDown}
+   role="button"
+   tabIndex={0}
   >
    <div className="cleche-types__accordion__item__title-wrapper">
     <p className="cleche-types__accordion__item__title">{title}</p>
