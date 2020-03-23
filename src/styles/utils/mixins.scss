@@ -1,0 +1,24 @@
+@mixin flex-center {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flex-between {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+@mixin flex-column {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+@mixin black-box {
+ color: white;
+ background-color: $black;
+ border-radius: $border-radius;
+ box-shadow: $shadow;
+}

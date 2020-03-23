@@ -56,13 +56,13 @@ export const Contacts = () => {
      <ScrollAnimation animateIn="fadeIn" duration={2}>
       <div className="contacts__info__contacts-list">
        <div className="contacts__info__contacts-list__item text_sm">
-        <img src={phoneIcon} />
+        <img src={phoneIcon} alt="phone icon" />
         <p>
          <a href="tel:+79626869000">{data.contacts.phone}</a>
         </p>
        </div>
        <div className="contacts__info__contacts-list__item text_sm">
-        <img src={mailIcon} />
+        <img src={mailIcon} alt="email icon" />
         <p>{data.contacts.email}</p>
        </div>
       </div>

@@ -7,6 +7,7 @@ const Head = () => {
    <script
     src="https://kit.fontawesome.com/fe4f036823.js"
     crossorigin="anonymous"
+    rel="dns-prefetch"
    ></script>
 
    <meta charSet="utf-8" />
@@ -16,14 +17,14 @@ const Head = () => {
    <meta property="og:title" content="Cliche" />
    <meta property="og:description" content="Изготовление клише" />
    <meta property="og:image" content="https://something.io/cover.jpeg" />
-   <link
+   {/* <link
     href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
     rel="stylesheet"
-   />
-   <link
+   /> */}
+   {/* <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-   />
+   /> */}
 
    <link
     rel="apple-touch-icon"

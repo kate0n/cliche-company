@@ -1,36 +1,13 @@
 @import "./utils/normalize.css";
 @import "./utils/reset.css";
+@import "./utils/animate.css";
+@import "./utils/mixins.scss";
 
 $black: #333333;
 $bg: #f2f2f2;
 $gray: #e0e0e0;
 $shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $border-radius: 8px;
-
-@mixin flex-center {
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-@mixin flex-between {
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-
-@mixin flex-column {
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-@mixin black-box {
- color: white;
- background-color: $black;
- border-radius: $border-radius;
- box-shadow: $shadow;
-}
 
 * {
  box-sizing: border-box;
@@ -42,6 +19,14 @@ $border-radius: 8px;
  font-weight: 400;
  font-display: swap;
  src: url("./fonts/Geometrico.otf");
+}
+
+@font-face {
+ font-family: "Roboto";
+ font-style: normal;
+ font-weight: 300;
+ font-display: swap;
+ src: url("./fonts/Roboto/Roboto-Light.ttf");
 }
 
 body,
@@ -61,10 +46,6 @@ html {
 #___gatsby {
  overflow-x: hidden;
 }
-/* 
-.app-container {
-  padding: 66px 122px;
-} */
 
 .hidden {
  display: none;
@@ -245,9 +226,9 @@ html {
  margin: 0 auto;
  margin-bottom: 24px;
 }
-@import "./components//services.scss";
-@import "./components/materials.scss";
 
+@import "./components/services.scss";
+@import "./components/materials.scss";
 @import "./components/cleche-types.scss";
 @import "./components/features.scss";
 @import "./components/contacts.scss";

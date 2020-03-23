@@ -22,7 +22,7 @@ export const Main = () => (
      <Scrollchor to="#contacts"> {data.main.buttonText}</Scrollchor>
     </button>
     <Scrollchor to="#services">
-     <img src={arrowDown} className="main__arrow-down" />
+     <img src={arrowDown} className="main__arrow-down" alt="background" />
     </Scrollchor>
    </ScrollAnimation>
   </div>

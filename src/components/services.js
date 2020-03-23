@@ -44,7 +44,11 @@ export const Services = () => (
 const CardItem = ({ text, img, style }) => (
  <div className="services__layout__card" style={style}>
   <div className="services__layout__card-text">{text}</div>
-  <img className="services__layout__card-img" src={img} />
+  <img
+   className="services__layout__card-img"
+   src={img}
+   alt="background for service"
+  />
  </div>
 )
 

@@ -1,9 +1,9 @@
 module.exports = {
  pathPrefix: `/cliche-company`,
  siteMetadata: {
-  title: `Gatsby Default Starter`,
-  description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-  author: `@gatsbyjs`,
+  title: `Изготовление клише`,
+  description: `Изготовление высококачественных тиражестойких клеше для декаративной обрабоки изделий`,
+  author: ``,
  },
  plugins: [
   `gatsby-plugin-react-helmet`,
@@ -29,20 +29,13 @@ module.exports = {
    },
   },
   `gatsby-plugin-sass`,
-  // {
-  //   resolve: `gatsby-plugin-postcss`,
-  //   options: {
-  //     postCssPlugins: [
-  //       require(`postcss-preset-env`)({ stage: 0 }),
-  //       require(`postcss-mixins`),
-  //       require("postcss-simple-vars"),
-  //       require("postcss-nested"),
-  //       // require(`postcss-url`)({ url: 'copy', useHash: true})
-  //     ],
-  //   },
-  // },
-  // this (optional) plugin enables Progressive Web App + Offline functionality
+  {
+   resolve: "gatsby-plugin-html-attributes",
+   options: {
+    lang: "ru",
+   },
+  }// this (optional) plugin enables Progressive Web App + Offline functionality
   // To learn more, visit: https://gatsby.dev/offline
-  // `gatsby-plugin-offline`,
+  `gatsby-plugin-offline`,
  ],
 }
