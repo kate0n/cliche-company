@@ -4,29 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 import Container from "./container"
 import phoneIcon from "../images/phone_icon.svg"
 import mailIcon from "../images/mail_icon.svg"
-
-const inputs = [
- {
-  name: "name",
-  label: "Имя",
-  type: "text",
- },
- {
-  name: "email",
-  label: "Почта",
-  type: "email",
- },
- {
-  name: "phone",
-  label: "Телефон",
-  type: "phone",
- },
- {
-  name: "file",
-  label: "Файл",
-  type: "file",
- },
-]
+import data from "../data"
 
 export const Contacts = () => {
  const [serverState, setServerState] = React.useState({
@@ -54,20 +32,16 @@ export const Contacts = () => {
    data: new FormData(form),
   })
    .then(r => {
-    handleServerResponse(true, "Мы успешно получили вашу заявку :)", form)
+    handleServerResponse(true, data.contacts.successText, form)
    })
    .catch(r => {
-    handleServerResponse(
-     false,
-     "Что-то пошло не так. Отправьте форму заново",
-     form
-    )
+    handleServerResponse(false, data.contacts.failText, form)
    })
  }
  return (
   <Container>
    <ScrollAnimation animateIn="fadeIn" duration={2}>
-    <h3 className="title_h3">СВЯАТЬСЯ С НАМИ</h3>{" "}
+    <h3 className="title_h3">{data.contacts.title}</h3>{" "}
    </ScrollAnimation>
    <div className="contacts" id="contacts">
     {/* left block */}
@@ -75,14 +49,8 @@ export const Contacts = () => {
     <div className="contacts__info">
      <ScrollAnimation animateIn="fadeIn" duration={2}>
       <div className="contacts__info__text">
-       <p className="text_md">
-        Мы всегда на связи. Пожалуйста, заполните форму. С каждым клиентом мы
-        разрабатываем индивидуальные условия сотрудничества
-       </p>
-       <p className="text_md">
-        Для изготовления понадобится файл формата stl, но также подойдет
-        jpg/png, cdr, eps, ei
-       </p>
+       <p className="text_md">{data.contacts.desc}</p>
+       <p className="text_md">{data.contacts.formats}</p>
       </div>
      </ScrollAnimation>
      <ScrollAnimation animateIn="fadeIn" duration={2}>
@@ -90,12 +58,12 @@ export const Contacts = () => {
        <div className="contacts__info__contacts-list__item text_sm">
         <img src={phoneIcon} />
         <p>
-         <a href="tel:+79626869000">+7–(962)–686–90–00</a>
+         <a href="tel:+79626869000">{data.contacts.phone}</a>
         </p>
        </div>
        <div className="contacts__info__contacts-list__item text_sm">
         <img src={mailIcon} />
-        <p>svetlichny.dmitry@gmail.com</p>
+        <p>{data.contacts.email}</p>
        </div>
       </div>
      </ScrollAnimation>
@@ -108,7 +76,7 @@ export const Contacts = () => {
      onSubmit={handleOnSubmit}
      enctype="multipart/form-data"
     >
-     {inputs.map(input => (
+     {data.contacts.inputs.map(input => (
       <div className="contacts__form__input-wrapper">
        <ScrollAnimation animateIn="fadeIn" duration={2}>
         <label className="contacts__form__input-label" for={input.name}>
