@@ -18,7 +18,7 @@ $border-radius: 8px;
  font-style: normal;
  font-weight: 400;
  font-display: swap;
- src: url("./fonts/Geometrico.otf");
+ src: local("Geometrico"), url("./fonts/Geometrico.otf");
 }
 
 @font-face {
@@ -26,7 +26,8 @@ $border-radius: 8px;
  font-style: normal;
  font-weight: 300;
  font-display: swap;
- src: url("./fonts/Roboto/Roboto-Light.ttf");
+ src: local("Roboto-Light"), local("RobotoLight"),
+  url("./fonts/Roboto/Roboto-Light.ttf");
 }
 
 body,

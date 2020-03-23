@@ -1,6 +1,8 @@
 import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
 import Container from "./container"
+import arrowDown from "../images/arrowDown.svg"
+import arrowUp from "../images/arrowUp.svg"
 import data from "../data"
 
 export const ClicheTypes = () => {
@@ -41,9 +43,9 @@ const QuestionItem = ({ title, desc, isOpen, handleAccordion, index }) => (
    <div className="cleche-types__accordion__item__title-wrapper">
     <p className="cleche-types__accordion__item__title">{title}</p>
     {isOpen === index ? (
-     <i className="fas fa-chevron-up"></i>
+     <img src={arrowDown} alt="arrow down" />
     ) : (
-     <i className="fas fa-chevron-down"></i>
+     <img src={arrowUp} alt="arrow up" />
     )}
    </div>
 

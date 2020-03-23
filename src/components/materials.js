@@ -17,27 +17,27 @@ export const Materials = () => {
     <ScrollAnimation animateIn="fadeIn" duration={2}>
      <h3 className="title_h3">{data.materials.title}</h3>{" "}
     </ScrollAnimation>
-    <ul className="materials__tabs">
-     {data.materials.tabs.map((tab, i) => (
-      <ScrollAnimation animateIn="fadeIn" duration={2}>
+    <ScrollAnimation animateIn="fadeIn" duration={2}>
+     <ul className="materials__tabs">
+      {data.materials.tabs.map((tab, i) => (
        <li
         className={classNames("materials__tabs__item text_sm", {
          materials__tabs__item_active: activeTab === i,
         })}
         onClick={() => handleTabChange(i)}
        >
-        <p>{tab}</p>
+        {tab}
        </li>
-      </ScrollAnimation>
-     ))}
-    </ul>
-    <ul className="materials__desc">
-     {data.materials.desc[activeTab].map(desc => (
-      <ScrollAnimation animateIn="fadeIn" duration={2}>
+      ))}
+     </ul>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="fadeIn" duration={2}>
+     <ul className="materials__desc">
+      {data.materials.desc[activeTab].map(desc => (
        <li className="materials__desc__item text_sm">– {desc} </li>
-      </ScrollAnimation>
-     ))}
-    </ul>
+      ))}
+     </ul>
+    </ScrollAnimation>
    </div>
   </Container>
  )

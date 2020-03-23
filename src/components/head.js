@@ -4,12 +4,6 @@ import { Helmet } from "react-helmet"
 const Head = () => {
  return (
   <Helmet>
-   <script
-    src="https://kit.fontawesome.com/fe4f036823.js"
-    crossorigin="anonymous"
-    rel="dns-prefetch"
-   ></script>
-
    <meta charSet="utf-8" />
    <base href="/" />
    <title>Cliche</title>
