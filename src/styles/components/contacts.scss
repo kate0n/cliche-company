@@ -1,7 +1,7 @@
 .contacts {
  display: flex;
  justify-content: space-between;
-
+ max-width: 1180px;
  &__info {
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
  &__form {
   width: 50%;
   @include flex-center;
+  align-items: flex-end;
   justify-content: flex-start;
   flex-direction: column;
 
@@ -86,11 +87,16 @@
 
   &__info__contacts-list {
    margin: 0 auto;
-   margin-bottom: 32px;
+   margin-bottom: 56px;
+
+   &__item {
+    justify-content: center;
+   }
   }
 
   &__form {
    width: 100%;
+   align-items: center;
   }
  }
 }

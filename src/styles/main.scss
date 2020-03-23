@@ -178,6 +178,7 @@ html {
  width: 90%;
  margin: 0 auto;
  margin-bottom: 112px;
+ @include flex-column;
 }
 
 .main {
