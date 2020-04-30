@@ -74,12 +74,12 @@ export const Contacts = () => {
     <form
      className="contacts__form"
      onSubmit={handleOnSubmit}
-     enctype="multipart/form-data"
+     encType="multipart/form-data"
     >
-     {data.contacts.inputs.map(input => (
-      <div className="contacts__form__input-wrapper">
+     {data.contacts.inputs.map((input, i) => (
+      <div key={i} className="contacts__form__input-wrapper">
        <ScrollAnimation animateIn="fadeIn" duration={2}>
-        <label className="contacts__form__input-label" for={input.name}>
+        <label className="contacts__form__input-label" htmlFor={input.name}>
          {input.label}
         </label>
         <input

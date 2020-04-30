@@ -27,13 +27,14 @@ export const Materials = () => {
      <ul className="materials__tabs">
       {data.materials.tabs.map((tab, i) => (
        <li
+        key={i}
         className={classNames("materials__tabs__item text_sm", {
          materials__tabs__item_active: activeTab === i,
         })}
         onClick={() => handleTabChange(i)}
         onKeyDown={handleKeyDown}
-        tabIndex={0}
-        role="button"
+        role="presentation"
+        // tabIndex={0}
        >
         {tab}
        </li>
@@ -42,8 +43,10 @@ export const Materials = () => {
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeIn" duration={2}>
      <ul className="materials__desc">
-      {data.materials.desc[activeTab].map(desc => (
-       <li className="materials__desc__item text_sm">– {desc} </li>
+      {data.materials.desc[activeTab].map((desc, i) => (
+       <li key={i} className="materials__desc__item text_sm">
+        – {desc}{" "}
+       </li>
       ))}
      </ul>
     </ScrollAnimation>

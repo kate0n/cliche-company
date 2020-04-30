@@ -9,6 +9,7 @@ import Feature from "../components/features"
 import Contacts from "../components/contacts"
 import Footer from "../components/footer"
 
+// https://www.gatsbyjs.org/packages/gatsby-image/
 const IndexPage = () => (
  <>
   <Head />

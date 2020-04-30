@@ -6,7 +6,7 @@ import arrowDown from "../images/down-btn.png"
 
 export const Main = () => (
  <div className="main">
-  <h1 className="hidden">Изготовление клише</h1>{" "}
+  <h1 className="hidden">Изготовление клише и штампов</h1>{" "}
   <div className="main_bg">
    <ScrollAnimation animateIn="fadeIn" duration={2}>
     <h2 className="title_h2">{data.main.title}</h2>
@@ -18,9 +18,9 @@ export const Main = () => (
     <p className="text">{data.main.subtitle2}</p>
    </ScrollAnimation>
    <ScrollAnimation animateIn="fadeIn" duration={2}>
-    <button className="button">
-     <Scrollchor to="#contacts"> {data.main.buttonText}</Scrollchor>
-    </button>
+    <Scrollchor to="#contacts">
+     <button className="button">{data.main.buttonText}</button>
+    </Scrollchor>
     <Scrollchor to="#services">
      <img src={arrowDown} className="main__arrow-down" alt="background" />
     </Scrollchor>

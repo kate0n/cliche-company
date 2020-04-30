@@ -17,8 +17,8 @@ export const Features = () => (
     <div className="features__list__img-wrapper">
      <div className="features__list__img-overlay">
       <ul className="features__list__text">
-       {data.features.features.map(feature => (
-        <li>{feature}</li>
+       {data.features.features.map((feature, i) => (
+        <li key={i}>{feature}</li>
        ))}
       </ul>
      </div>

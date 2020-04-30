@@ -9,16 +9,42 @@ const Head = () => {
    <title>Cliche</title>
    <meta name="Description" content="Изготовление клише спб" />
    <meta property="og:title" content="Cliche" />
-   <meta property="og:description" content="Изготовление клише" />
+   <meta property="og:description" content="Изготовление клише и штампов" />
    <meta property="og:image" content="https://something.io/cover.jpeg" />
-   {/* <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
-    rel="stylesheet"
-   /> */}
-   {/* <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-   /> */}
+   {/* яндекс-вебмастер */}
+   <meta name="yandex-verification" content="01586322232d2ebc" />
+   {/* geo tag */}
+   <meta name="geo.region" content="RU" />
+   <meta name="geo.placename" content="округ Горелово" />
+   <meta name="geo.position" content="59.76677;30.11078" />
+   <meta name="ICBM" content="59.76677, 30.11078" />
+
+   {/* Yandex.Metrika counter */}
+   {/* <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(61207873, "init", {
+        clickmap: true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61207873" style="position:absolute; left:-9999px;" alt="" /></div></noscript> */}
+   {/* /Yandex.Metrika counter */}
+   {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+   {/* <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-161448697-1"
+   ></script>
+   <script>
+    window.dataLayer = window.dataLayer || []; function gtag()
+    {dataLayer.push(arguments)}
+    gtag('js', new Date()); gtag('config', 'UA-161448697-1');
+   </script> */}
+   {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
 
    <link
     rel="apple-touch-icon"

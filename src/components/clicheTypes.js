@@ -54,8 +54,9 @@ const QuestionItem = ({
    className="cleche-types__accordion__item"
    onClick={() => handleAccordion(index)}
    onKeyDown={handleKeyDown}
-   role="button"
-   tabIndex={0}
+   //  role="note"
+   role="presentation"
+   //  tabIndex={0}
   >
    <div className="cleche-types__accordion__item__title-wrapper">
     <p className="cleche-types__accordion__item__title">{title}</p>

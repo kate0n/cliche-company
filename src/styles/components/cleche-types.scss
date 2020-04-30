@@ -36,10 +36,14 @@
     padding: 24px;
     font-size: 20px;
     line-height: 23px;
+    // max-height: ..;
+    // overflow: hidden;
+    //transition: 1s ease all;
    }
 
    &_hidden {
     display: none;
+    //max-height: 0
    }
   }
  }
